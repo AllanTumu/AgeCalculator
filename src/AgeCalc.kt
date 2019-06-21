@@ -1,23 +1,24 @@
-import java.time.Month
 import java.util.*
 
 fun main (args:Array<String>){
-    //Input
-    println("Enter your date of birth")
+    //input
+    println("please input your date of birth")
     var DOB:String?
     DOB = readLine()!!.toString()
 
-    println("Enter your month of birth")
-    var MOB = readLine()!!.toInt()
+    println("please input your Month of birth")
+    var MOB:String?
+    MOB = readLine()!!.toString()
 
-    println("Enter your year of birth")
+    println("please input your Year of birth")
     var YOB:Int?
-     YOB = readLine()!!.toInt()
+    YOB = readLine()!!.toInt()
 
     var year = Calendar.getInstance().get(Calendar.YEAR)
-    //Process
-    var Age = year - YOB
+    //process
+    var Age:Int?
+    Age = year - YOB
 
     //Output
-    println("Your Age is $Age")
+    println("You were born on $DOB $MOB $YOB and you are $Age years old now")
 }
